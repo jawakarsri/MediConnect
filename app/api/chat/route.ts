@@ -6,7 +6,7 @@ import { supabase } from "@/lib/supabase";
 const genAI = new GoogleGenerativeAI("AIzaSyB_fboHbFQAqvMVfCfziIVmmu7X92jp1w0");
 
 // Get the chat model
-const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
 async function checkForAnswer(question: string) {
   const { data: conversations, error } = await supabase
